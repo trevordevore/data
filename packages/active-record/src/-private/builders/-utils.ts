@@ -21,5 +21,8 @@ export function extractCacheOptions(options: ConstrainedRequestOptions): CacheOp
   if ('backgroundReload' in options) {
     cacheOptions.backgroundReload = options.backgroundReload;
   }
+  if ('types' in options) {
+    cacheOptions.types = options.types;
+  }
   return cacheOptions;
 }

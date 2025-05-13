@@ -107,6 +107,9 @@ export function extractCacheOptions(options: ConstrainedRequestOptions) {
   if ('backgroundReload' in options) {
     cacheOptions.backgroundReload = options.backgroundReload;
   }
+  if ('types' in options) {
+    cacheOptions.types = options.types;
+  }
   return cacheOptions;
 }
 

@@ -172,6 +172,7 @@ export type ConstrainedRequestOptions = {
   host?: string;
   namespace?: string;
   resourcePath?: string;
+  types?: string[];
   urlParamsSettings?: QueryParamsSerializationOptions;
 };
 
